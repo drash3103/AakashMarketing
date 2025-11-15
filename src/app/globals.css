@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+     @theme {
+       --color-primary: #6C63FF; /* Purple for branding (hero, buttons, headers, brand elements) */
+       --color-primary-dark: #1e1b4b; /* Dark blue for gradients */
+       --color-secondary: #6C63FF; /* Purple (same as primary for consistency) */
+       --color-accent: #00B4D8; /* Cyan for icons, highlights, hover states */
+       --color-warning: #F9C80E; /* Yellow for badges, callouts, important highlights */
+       --color-light: #F8F9FE; /* White for backgrounds, cards */
+       --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+       --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+     }
+
+     body {
+       font-family: var(--font-inter), 'Inter', sans-serif;
+     }
+
+     h1, h2, h3, h4, h5, h6 {
+       font-family: var(--font-montserrat), 'Montserrat', sans-serif;
+       font-weight: 700;
+       letter-spacing: -0.02em;
+     }
+
+     h1 {
+       font-weight: 800;
+     }
+
+     h2 {
+       font-weight: 700;
+     }
+
+     /* Gradient Background Utility */
+     .bg-primary {
+       background: linear-gradient(to right, #6C63FF, #1e1b4b);
+     }
+
+     .container {
+       max-width: 1280px;
+       margin-left: auto;
+       margin-right: auto;
+       padding-left: 1rem;
+       padding-right: 1rem;
+     }
